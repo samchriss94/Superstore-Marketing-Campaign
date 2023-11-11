@@ -1,0 +1,28 @@
+1. Jelaskan apa yang Anda ketahui dari Airflow menggunakan pemahaman dan bahasa Anda sendiri 
+Airflow adalah alat atau kerangka kerja (framework) yang digunakan untuk mengatur dan menjalankan 
+tugas-tugas yang terjadwal dalam proses data dan pemrosesan data. Ini membantu dalam otomatisasi alur 
+kerja (workflow) yang melibatkan banyak langkah atau tugas. Airflow menggunakan konsep DAG (Directed 
+Acyclic Graph) untuk menggambarkan dan menjalankan tugas-tugas dalam urutan tertentu. 
+Contohnya, menggunakan Airflow untuk menjalankan rutinitas harian yang mencakup pengunduhan 
+data dari internet, pemrosesan data, dan pengiriman hasil ke email. Ini membantu dalam menjadwalkan,
+melacak, dan mengotomatisasi tugas-tugas ini.
+
+
+2. Jelaskan apa yang Anda ketahui dari Great Expectations menggunakan pemahaman dan bahasa Anda sendiri!
+Great Expectations adalah perangkat lunak yang membantu memeriksa, memvalidasi, dan memantau 
+kualitas data. Dengan Great Expectations, kita dapat menentukan aturan atau ekspektasi terkait data kita, 
+seperti jenis data yang diharapkan, nilai yang valid, atau pola yang harus diikuti. Setelah itu, kita 
+dapat menggunakan Great Expectations untuk memeriksa apakah data sesuai dengan ekspektasi kita. 
+Ini sangat membantu dalam menjaga kualitas data kita dan mendeteksi masalah data sebelum mereka menjadi 
+masalah yang lebih besar.
+
+
+3. Jelaskan apa yang Anda ketahui dari Batch Processing menggunakan pemahaman dan bahasa Anda sendiri 
+(Definisi, Contoh Kasus Penggunaan, Tools, dll) !
+Batch Processing adalah metode pemrosesan data di mana data diambil, diproses, dan disimpan dalam batch 
+atau kelompok. Ini berarti data diambil dalam jumlah tertentu (batch), kemudian diproses secara bersamaan. 
+Contoh kasus penggunaan batch processing adalah pengolahan gaji karyawan bulanan dalam sebuah perusahaan. 
+Data gaji semua karyawan dikumpulkan selama sebulan, dan kemudian dihitung dan diproses secara bersamaan 
+pada akhir bulan. Alat yang digunakan untuk batch processing dapat termasuk Hadoop, Apache Spark, atau 
+bahkan spreadsheet seperti Excel. Batch processing cocok untuk tugas-tugas yang tidak memerlukan 
+pemrosesan real-time dan memungkinkan penghematan waktu dan sumber daya.

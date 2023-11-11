@@ -1,0 +1,485 @@
+{
+  "evaluation_parameters": {},
+  "meta": {
+    "active_batch_definition": {
+      "batch_identifiers": {},
+      "data_asset_name": "marketingcampaign",
+      "data_connector_name": "fluent",
+      "datasource_name": "superstoremc"
+    },
+    "batch_markers": {
+      "ge_load_time": "20231103T044007.291717Z",
+      "pandas_data_fingerprint": "d17a5ce6f672f3824a7b0c389ac6ce91"
+    },
+    "batch_spec": {
+      "reader_method": "read_csv",
+      "reader_options": {
+        "filepath_or_buffer": "P2M3_samuel_christian_data_clean.csv"
+      }
+    },
+    "checkpoint_id": null,
+    "checkpoint_name": "checkpoint_1",
+    "expectation_suite_name": "expectation-superstore-dataset",
+    "great_expectations_version": "0.17.23",
+    "run_id": {
+      "run_name": null,
+      "run_time": "2023-11-03T11:40:07.275361+07:00"
+    },
+    "validation_id": null,
+    "validation_time": "20231103T044007.313748Z"
+  },
+  "results": [
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_unique",
+        "kwargs": {
+          "batch_id": "superstoremc-marketingcampaign",
+          "column": "id"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 2216,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_max_to_be_between",
+        "kwargs": {
+          "batch_id": "superstoremc-marketingcampaign",
+          "column": "year_birth",
+          "max_value": 1997,
+          "min_value": 1892
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 1996
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_type_list",
+        "kwargs": {
+          "batch_id": "superstoremc-marketingcampaign",
+          "column": "income",
+          "type_list": [
+            "integer",
+            "float"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": "float64"
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_median_to_be_between",
+        "kwargs": {
+          "batch_id": "superstoremc-marketingcampaign",
+          "column": "income",
+          "max_value": 53000,
+          "min_value": 50000
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 51381.5
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_mean_to_be_between",
+        "kwargs": {
+          "batch_id": "superstoremc-marketingcampaign",
+          "column": "income",
+          "max_value": 53000,
+          "min_value": 50000
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 52247.25135379061
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "batch_id": "superstoremc-marketingcampaign",
+          "column": "kidhome",
+          "value_set": [
+            0,
+            1
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 2216,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [
+          {
+            "count": 20,
+            "value": 2
+          }
+        ],
+        "partial_unexpected_index_list": [
+          19,
+          32,
+          52,
+          84,
+          111,
+          113,
+          211,
+          543,
+          586,
+          587,
+          642,
+          643,
+          656,
+          723,
+          778,
+          848,
+          852,
+          869,
+          1042,
+          1128
+        ],
+        "partial_unexpected_list": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "unexpected_count": 46,
+        "unexpected_percent": 2.0758122743682312,
+        "unexpected_percent_nonmissing": 2.0758122743682312,
+        "unexpected_percent_total": 2.0758122743682312
+      },
+      "success": false
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "batch_id": "superstoremc-marketingcampaign",
+          "column": "numwebvisitsmonth",
+          "value_set": [
+            7,
+            8
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 2216,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [
+          {
+            "count": 7,
+            "value": 4
+          },
+          {
+            "count": 4,
+            "value": 1
+          },
+          {
+            "count": 4,
+            "value": 5
+          },
+          {
+            "count": 3,
+            "value": 6
+          },
+          {
+            "count": 2,
+            "value": 2
+          }
+        ],
+        "partial_unexpected_index_list": [
+          0,
+          1,
+          2,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          21,
+          22,
+          24,
+          28
+        ],
+        "partial_unexpected_list": [
+          1,
+          5,
+          2,
+          2,
+          6,
+          5,
+          4,
+          4,
+          1,
+          4,
+          1,
+          6,
+          1,
+          4,
+          4,
+          4,
+          5,
+          4,
+          6,
+          5
+        ],
+        "unexpected_count": 1489,
+        "unexpected_percent": 67.19314079422382,
+        "unexpected_percent_nonmissing": 67.19314079422382,
+        "unexpected_percent_total": 67.19314079422382
+      },
+      "success": false
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "batch_id": "superstoremc-marketingcampaign",
+          "column": "numdealspurchases",
+          "value_set": [
+            1,
+            2
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 2216,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [
+          {
+            "count": 10,
+            "value": 3
+          },
+          {
+            "count": 6,
+            "value": 4
+          },
+          {
+            "count": 2,
+            "value": 0
+          },
+          {
+            "count": 2,
+            "value": 12
+          }
+        ],
+        "partial_unexpected_index_list": [
+          8,
+          9,
+          14,
+          15,
+          16,
+          20,
+          21,
+          24,
+          25,
+          26,
+          27,
+          30,
+          33,
+          41,
+          43,
+          49,
+          51,
+          59,
+          60,
+          62
+        ],
+        "partial_unexpected_list": [
+          3,
+          3,
+          0,
+          4,
+          4,
+          3,
+          3,
+          4,
+          3,
+          12,
+          12,
+          3,
+          3,
+          3,
+          3,
+          4,
+          3,
+          4,
+          0,
+          4
+        ],
+        "unexpected_count": 763,
+        "unexpected_percent": 34.431407942238266,
+        "unexpected_percent_nonmissing": 34.431407942238266,
+        "unexpected_percent_total": 34.431407942238266
+      },
+      "success": false
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "batch_id": "superstoremc-marketingcampaign",
+          "column": "complain",
+          "value_set": [
+            0,
+            1
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 2216,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_most_common_value_to_be_in_set",
+        "kwargs": {
+          "batch_id": "superstoremc-marketingcampaign",
+          "column": "recency",
+          "value_set": [
+            56
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": [
+          56
+        ]
+      },
+      "success": true
+    }
+  ],
+  "statistics": {
+    "evaluated_expectations": 10,
+    "success_percent": 70.0,
+    "successful_expectations": 7,
+    "unsuccessful_expectations": 3
+  },
+  "success": false
+}
